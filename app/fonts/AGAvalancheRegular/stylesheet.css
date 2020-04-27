@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'AGAvalancheC';
+    src: url('AGAvalancheC.eot');
+    src: url('AGAvalancheC.eot?#iefix') format('embedded-opentype'),
+        url('AGAvalancheC.woff') format('woff'),
+        url('AGAvalancheC.ttf') format('truetype'),
+        url('AGAvalancheC.svg#AGAvalancheC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

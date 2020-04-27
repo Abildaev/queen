@@ -1,0 +1,56 @@
+.footer
+  background: #f1f1f1
+
+
+  &__group
+    padding: rem(50px) 0
+    +tablet
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+  &__logo
+    margin: 0 auto
+    width: 100%
+    max-width: rem(150px)
+    margin-bottom: rem(30px)
+    +tablet
+      margin: 0
+      max-width: rem(130px)
+
+  &__nav
+    +tablet
+      width: 80%
+      display: flex
+      justify-content: flex-end
+
+  &__link
+    color: $subtitleColor
+    margin-bottom: rem(15px)
+    text-align: center
+    display: block
+    +tablet
+      margin-bottom: 0
+      display: inline-block
+      margin-left: 1.5%
+    +laptop
+      margin-left: 2%
+
+
+  &__link:last-child
+    margin-bottom: 0
+
+
+  &__line
+    background: #e1e1e1
+    width: 100%
+    height: rem(1px)
+
+  &__law
+    width: 100%
+    text-align: center
+    color: #b7b7b7
+    display: inline-block
+    margin: rem(10px) 0
+    +tablet
+      text-align: left

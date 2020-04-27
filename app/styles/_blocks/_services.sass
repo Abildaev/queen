@@ -1,0 +1,51 @@
+.services
+
+  &__group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__object
+    margin-bottom: rem(40px)
+    position: relative
+    box-sizing: border-box
+    padding: rem(60px) rem(30px)
+    border: 1px solid $borderColor
+    width: 100%
+    +tablet
+      margin-bottom: rem(35px)
+      width: 49%
+
+  &__object:nth-child(3)
+    +tablet
+      margin-bottom: 0
+
+  &__object:nth-child(4)
+      margin-bottom: 0
+
+
+
+  &__title
+    position: absolute
+    display: inline-block
+    background: $WhiteColor
+    top: rem(-15px)
+    font-size: rem(20px)
+    color: $titleColor
+    padding: 0 rem(10px)
+    +tablet
+      font-size: rem(24px)
+
+
+  &__subtitle
+    margin-bottom: rem(18px)
+    font-size: 18px
+    color: $subtitleColor
+
+
+  &__rectangle
+    display: inline-block
+    margin-right: rem(10px)
+    width: rem(10px)
+    height: rem(10px)
+    background: $mainColor

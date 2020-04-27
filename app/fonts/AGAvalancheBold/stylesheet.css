@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'AGAvalancheC';
+    src: url('AGAvalancheC-Bold.eot');
+    src: url('AGAvalancheC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AGAvalancheC-Bold.woff') format('woff'),
+        url('AGAvalancheC-Bold.ttf') format('truetype'),
+        url('AGAvalancheC-Bold.svg#AGAvalancheC-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

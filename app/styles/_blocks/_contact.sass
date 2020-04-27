@@ -1,0 +1,109 @@
+.contact
+
+  &__group
+    +tablet
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      flex-direction: row-reverse
+
+  &__forms
+    margin-bottom: rem(60px)
+    +phone
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+    +tablet
+      width: 49%
+      margin-bottom: 0
+
+  &__form
+    font-family: $font
+    color: $mainColor
+    margin-bottom: rem(30px)
+    outline: none
+    box-shadow: 0 0 rem(10px) rem(3px) rgba(104, 104, 104, 0.1)
+    border: none
+    box-sizing: border-box
+    padding: rem(15px) rem(20px)
+    width: 100%
+    @include placeholder()
+      font-family: $font
+      font-size: rem(16px)
+      color: $subtitleColor
+
+    &_input
+      +phone
+        width: 49%
+        font-size: rem(18px)
+      +tablet
+        width: 100%
+
+    &_last
+      +phone
+        width: 100%
+
+    &_message
+      height: rem(150px)
+      font-size: rem(16px)
+      resize: none
+
+  &__button
+    transition: .5s
+    display: block
+    margin: 0 auto
+    color: $WhiteColor
+    box-sizing: border-box
+    padding: rem(12px) rem(10px)
+    background: $secondColor
+    font-size: rem(18px)
+    width: 60%
+    border: 1px solid rgba(255, 5, 51, 1)
+    +phone
+      width: 36%
+    +tablet
+      margin-right: 0
+      margin-left: auto
+
+  &__button:hover
+    background: rgba(255, 5, 51, 0)
+    border: 1px solid rgba(255, 5, 51, 1)
+    color: $secondColor
+
+  &__info
+    +tablet
+      margin-top: rem(40px)
+      width: 40%
+
+  &__icon
+    color: #0e151f
+    font-size: rem(24px)
+    margin-bottom: rem(10px)
+    +tablet
+      margin-bottom: 0
+      margin-right: rem(15px)
+
+  &__detail
+    margin-bottom: rem(30px)
+    text-align: center
+    +tablet
+      margin-bottom: rem(50px)
+      display: flex
+      align-items: center
+      text-align: left
+
+  &__detail:last-child
+    margin-bottom: 0
+
+  &__link
+    color: #0e151f
+    display: block
+    +tablet
+      font-size: rem(18px)
+
+  &__address
+    margin: 0 auto
+    width: 50%
+    +tablet
+      margin: 0
+      width: 80%

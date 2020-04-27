@@ -1,0 +1,178 @@
+.portfolio
+
+  &__group
+    justify-content: center
+    display: flex
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    flex-wrap: wrap
+    +phone
+      justify-content: space-between
+
+
+
+  &__link
+    position: relative
+    z-index: 2
+    display: block
+    margin-bottom: 0.1%
+    width: 100%
+    height: rem(360px)
+    background: #ccc
+    +phone
+      width: 49%
+      height: rem(240px)
+    +tablet
+      height: rem(360px)
+    +laptop
+      width: 33.3%
+
+  &__link:after
+    content: "Открыть сайт"
+    color: $WhiteColor
+    opacity: 0
+    font-size: rem(22px)
+    +center
+
+  &__link:hover:after
+    opacity: 1
+
+  &__first
+    background: url("../images/portfolio/1.1.png") no-repeat center
+
+  &__second
+    background: url("../images/portfolio/bh.jpg") no-repeat center
+
+  &__third
+    background: url("../images/portfolio/altay.jpg") no-repeat center
+
+  &__fourth
+    background: url("../images/portfolio/wot.jpg") no-repeat center
+
+  &__fifth
+    background: url("../images/portfolio/rybalka.jpg") no-repeat center
+
+  &__sixth
+    background: url("../images/portfolio/dm.jpg") no-repeat center
+
+  &__seventh
+    background: url("../images/portfolio/kidslab.jpg") no-repeat center
+
+  &__eighth
+    background: url("../images/portfolio/cleanor.jpg") no-repeat center
+
+  &__ninth
+    background: url("../images/portfolio/face.jpg") no-repeat center
+
+  &__darker
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.5s
+    opacity: 0
+    width: 100%
+    height: rem(360px)
+    background: linear-gradient(to right,#12c2e9, #c471ed, #f64f59)
+    +phone
+      height: rem(240px)
+    +tablet
+      height: rem(360px)
+
+
+  &__link:hover .portfolio__darker
+    opacity: 0.8
+
+
+  .owl-theme .owl-dots .owl-dot span
+    display: none
+
+  .owl-dots
+    display: flex
+    display: flex
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    flex-direction: column
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    +phone
+      flex-direction: row
+      justify-content: space-around
+    +tablet
+      justify-content: flex-start
+
+  .owl-stage-outer
+    margin-top: rem(35px)
+
+
+  .owl-dot:nth-child(1),
+  .owl-dot:nth-child(2),
+  .owl-dot:nth-child(3)
+    margin-bottom: rem(15px)
+    text-align: center
+    transition: .5s
+    font-size: rem(18px)
+    color: $titleColor
+    +tablet
+      margin-right: rem(30px)
+      margin-bottom: 0
+
+  .owl-dot
+    outline: none
+
+  .owl-dot.active
+    color: $secondColor
+
+  .owl-dot:last-child
+    margin-bottom: 0
+    +phone
+      margin-bottom: rem(15px)
+    +tablet
+      margin-bottom: 0
+
+  .owl-dot:hover:nth-child(1),
+  .owl-dot:hover:nth-child(2),
+  .owl-dot:hover:nth-child(3)
+    color: $secondColor
+
+  .owl-dot:nth-child(1):after
+    content: "Веб сайты"
+
+  .owl-dot:nth-child(1):after:hover
+    color: #ff0533
+
+  .owl-dot:nth-child(2):after
+    content: "Приложения"
+
+  .owl-dot:nth-child(3):after
+    content: "Дизайн"
+
+  .slider__portfolio
+    display: flex
+    display: flex
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    flex-direction: column-reverse
+
+  &__button
+    transition: 0.5s
+    display: block
+    box-sizing: border-box
+    text-align: center
+    width: rem(170px)
+    font-size: rem(18px)
+    border: 1px solid rgba(255,5,51, 0)
+    margin: rem(30px) auto 0
+    color: $WhiteColor
+    padding: rem(10px) rem(40px)
+    background: $secondColor
+
+
+  &__button:hover
+    color: $secondColor
+    background: none
+    border: 1px solid rgba(255,5,51, 1)

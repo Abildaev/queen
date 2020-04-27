@@ -1,0 +1,74 @@
+.reviews
+
+  &__group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__object
+    margin-bottom: rem(40px)
+    position: relative
+    box-sizing: border-box
+    padding: rem(60px) rem(40px)
+    border: 1px solid $borderColor
+    width: 100%
+    +tablet
+      margin-bottom: 0
+      width: 49%
+
+  &__icon
+    position: absolute
+    display: inline-block
+    background: $WhiteColor
+    top: rem(-15px)
+    font-size: rem(20px)
+    color: $titleColor
+    padding: 0 rem(10px)
+    +tablet
+      font-size: rem(30px)
+      top: rem(-20px)
+
+  &__review
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: flex-start
+
+
+  &__person
+    width: 100%
+    +phone
+      width: 75%
+    +tablet
+      width: 100%
+
+  &__name
+    display: block
+    font-size: rem(18px)
+    color: $titleColor
+    margin-bottom: rem(25px)
+    +tablet
+      font-size: rem(20px)
+
+  &__text
+    color: $subtitleColor
+    +tablet
+      font-size: rem(18px)
+
+  &__img
+    margin-right: rem(30px)
+    margin-bottom: rem(15px)
+    width: rem(70px)
+    height: rem(70px)
+    border-radius: 50%
+    +phone
+      margin-bottom: 0
+    +tablet
+      margin-bottom: rem(25px)
+
+
+  &__anna
+    background: url("../images/reviews/anna.jpg")
+
+  &__azamat
+    background: url("../images/reviews/azamat.jpg")

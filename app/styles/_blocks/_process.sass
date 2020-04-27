@@ -1,0 +1,61 @@
+.process
+
+  &__group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__object
+    position: relative
+    width: 100%
+    margin-bottom: rem(40px)
+    box-sizing: border-box
+    padding: rem(40px) rem(30px)
+    border: 1px dashed rgba(255, 5, 51, .2)
+    +tablet
+      transition: 0.5s
+      margin-bottom: rem(35px)
+      width: 49%
+
+    +laptop
+      margin-bottom: 0
+      width: 24%
+
+  &__object:last-child
+    margin-bottom: 0
+
+  &__object:nth-child(3)
+    +tablet
+      margin-bottom: 0
+
+  &__icon
+    color: $titleColor
+    font-size: rem(56px)
+
+  &__title
+    width: 100%
+    margin: rem(30px) 0 rem(20px)
+    font-size: rem(20px)
+    color: $titleColor
+    +tablet
+      font-size: rem(24px)
+    +laptop
+      width: 60%
+
+  &__subtitle
+    color: $subtitleColor
+
+  &__number
+    line-height: rem(10px)
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    width: rem(35px)
+    height: rem(35px)
+    background: $secondColor
+    position: absolute
+    top: rem(-18px)
+    right: rem(15px)
+    color: $WhiteColor
+    font-size: rem(22px)

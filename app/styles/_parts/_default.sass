@@ -1,0 +1,97 @@
+html, body
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+  font-weight: 200
+  font-family: $font
+
+h1,h2,h3,h4
+  margin: 0
+
+a
+  text-decoration: none
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+.container
+  padding: 0 rem(15px)
+  margin: 0 auto
+  max-width: $width
+
+.wrapper
+  position: relative
+  overflow: hidden
+  min-height: 100%
+
+
+.darkbg
+  background: $bgColor
+  padding: rem(60px) 0
+
+.lightbg
+  padding: rem(60px) 0
+
+.title
+  margin: 0 0 rem(50px)
+  font-family: $font
+  display: flex
+  align-items: center
+
+  &__rectangle
+    width: rem(5px)
+    height: rem(90px)
+    background: $secondColor
+    margin-right: rem(15px)
+
+  &__secondary
+    color: $subtitleColor
+    font-size: rem(16px)
+    display: block
+    +tablet
+      font-size: rem(18px)
+
+  &__main
+    width: 80%
+    color: $titleColor
+    font-weight: bold
+    font-size: rem(22px)
+    display: block
+    +tablet
+      font-size: rem(30px)
+
+
+.scroll__up
+  border-radius: rem(2px)
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 2
+  transition: 0.5s
+  position: fixed
+  top: 90%
+  right: -100%
+  border: 1px solid rgba(255, 5, 51, 0)
+  width: rem(35px)
+  height: rem(35px)
+  background: $secondColor
+
+.scroll__up:hover
+  background: $WhiteColor
+  border: 1px solid rgba(255, 5, 51, 1)
+
+
+.scroll__up:hover .scroll__icon
+  color: $secondColor
+
+
+.scroll__icon
+  display: block
+  color: $WhiteColor
+  font-size: rem(26px)
+
+
+

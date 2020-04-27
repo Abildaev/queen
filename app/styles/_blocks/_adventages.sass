@@ -1,0 +1,50 @@
+.advantages
+
+  &__group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__object
+    width: 100%
+    margin-bottom: rem(40px)
+    box-sizing: border-box
+    background: $WhiteColor
+    padding: rem(40px) rem(30px)
+    box-shadow: 0 0 rem(10px) rem(3px) rgba(104, 104, 104, 0.1)
+    +tablet
+      transition: 0.5s
+      margin-bottom: rem(35px)
+      width: 49%
+    +laptop
+      margin-bottom: 0
+      width: 24%
+
+  &__object:last-child
+    margin-bottom: 0
+
+  &__object:nth-child(3)
+    +tablet
+      margin-bottom: 0
+
+  &__object:hover
+    transform: translateY(rem(-10px))
+    box-shadow: 0 0 rem(10px) rem(3px) rgba(104, 104, 104, 0)
+
+
+
+
+  &__icon
+    color: $titleColor
+    font-size: rem(56px)
+
+  &__title
+    margin: rem(30px) 0 rem(20px)
+    font-size: rem(20px)
+    color: $titleColor
+    +tablet
+      font-size: rem(24px)
+
+
+  &__subtitle
+    color: $subtitleColor

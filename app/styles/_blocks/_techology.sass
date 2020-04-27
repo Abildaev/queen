@@ -1,0 +1,63 @@
+.technology
+
+  &__group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__object
+    width: 100%
+    margin-bottom: rem(40px)
+    box-sizing: border-box
+    background: $WhiteColor
+    padding: rem(40px) rem(30px) rem(10px)
+    box-shadow: 0 0 rem(10px) rem(3px) rgba(104, 104, 104, 0.1)
+    +tablet
+      transition: 0.5s
+      margin-bottom: rem(35px)
+      width: 49%
+
+  &__object:last-child
+    margin-bottom: 0
+
+  &__object:nth-child(3)
+    +tablet
+      margin-bottom: 0
+
+
+  &__object:hover
+    transform: translateY(rem(-10px))
+    box-shadow: 0 0 rem(10px) rem(3px) rgba(104, 104, 104, 0)
+
+
+  &__img
+    width: 100%
+    max-width: rem(40px)
+
+  &__title
+    font-size: rem(20px)
+    margin-bottom: rem(40px)
+    color: $titleColor
+    +tablet
+      font-size: rem(24px)
+
+  &__cards-group
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__card
+    margin-bottom: rem(30px)
+    width: 100%
+    display: flex
+    align-items: center
+    +phone
+      width: 49%
+    +desktop
+      width: 29%
+
+
+  &__card-title
+    color: $subtitleColor
+    margin-left: rem(15px)
+    font-size: rem(18px)
